@@ -1,0 +1,197 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oxygen'!important;
+}
+
+.header {
+    margin: 10px 10px 0 10px;
+}
+
+div.header {
+    background-color: #22333B;
+    color: #f4f4f4;
+}
+
+.portfolio, .main {
+    color: #0A0908;
+}
+
+.portfolio {
+    margin-bottom: 10px;
+}
+
+.portfolio a,
+.portfolio a:hover {
+    color: inherit;
+}
+
+.portfolio .row {
+    padding: 5px 0 5px 0;
+}
+
+/* Tags & legend */
+.tags {
+    margin-top: -0.5rem;
+    text-align: right;
+    font-size: 10px;
+}
+
+.tags > span,
+.tags-black > span{
+    color: #0a0908;
+}
+
+.tags span{
+    padding: 1px 2px 1px 2px;
+}
+
+.md {
+    background: #ec606e;
+}
+
+.ba {
+    background: #9abca7;
+}
+
+.pm {
+    background: #f7b2ad;
+}
+
+.sd {
+    background: #ceb7b3;
+}
+
+.main h2 {
+    margin-bottom: 5px;
+}
+
+.main-section {
+    min-height: 100vh;
+    border-top: 1px solid #22333B;
+}
+
+.align-center-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .card-subtitle {
+    line-height: normal;
+}
+
+.main .tags-black > span,
+.main .tags-white > span {
+    margin: 0 4px 0 4px;
+    padding: 4px 2px 4px 2px;
+}
+
+.tags-white,
+.tags-black {
+    text-align: center; 
+    font-size: 16px;
+}
+
+.tags-white {
+    color: #f2f2f2;
+}
+
+#eswai {
+    background-image: url("../assets/img/vancouver-background.jpg");
+    color: #f2f2f2; 
+    background-size: cover;
+}
+
+#bluefuture {
+    background-image: url("../assets/img/bf-banner.jpg");
+    background-size: cover;
+    color: #f2f2f2;
+}
+
+#breathify {
+    background: #f2f2f2;
+}
+
+#sgs {
+    background-image: url("../assets/img/fabric-banner.jpg");
+    background-size: cover;
+}
+
+.main-header {
+    text-align: center;
+    font-size: 60px; 
+    margin-bottom: 30px;
+}
+
+/* ANIMATION */
+#animation-container {
+    min-width: 100%;
+    min-height: 40vh;
+    overflow: hidden;
+}
+
+#car-animation {
+    width: 25%;
+    position: absolute;
+    -webkit-animation: move 10s;
+    animation: move 10s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move
+{
+    0% {
+        left: -25%;
+        opacity: 0;
+    }
+    25% {
+        left: 0%;
+        opacity: 1;
+    }
+    75% {
+        left: 50%;
+        opacity: 1;
+    }
+    100% {
+        left: 75%;
+        opacity: 0;
+    }
+}
+@keyframes move
+{
+    0% {
+        left: -25%;
+        opacity: 0;
+    }
+    25% {
+        left: 0%;
+        opacity: 1;
+    }
+    75% {
+        left: 50%;
+        opacity: 1;
+    }
+    100% {
+        left: 75%;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .equal-height {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio .card {
+        min-height: 100%;
+    }
+
+    .portfolio .row {
+        padding: 10px 0 10px 0;
+    }
+}
