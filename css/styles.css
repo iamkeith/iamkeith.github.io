@@ -32,6 +32,11 @@ div.header {
     padding: 5px 0 5px 0;
 }
 
+.equal-height {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Tags & legend */
 .tags {
     margin-top: -0.5rem;
@@ -102,6 +107,11 @@ div.header {
 #eswai {
     background-image: url("../assets/img/vancouver-background.jpg");
     color: #f2f2f2; 
+    background-size: cover;
+}
+
+#mts {
+    background-image: url('../assets/img/mts-background.jpg');
     background-size: cover;
 }
 
@@ -180,7 +190,14 @@ div.header {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 991px) {
+    #mts .row > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 992px) {
     .equal-height {
         display: flex;
         display: -webkit-flex;
@@ -191,7 +208,12 @@ div.header {
         min-height: 100%;
     }
 
-    .portfolio .row {
-        padding: 10px 0 10px 0;
+    #mts {
+        background-image: none;
+    }
+
+    #mts .col-lg-7 {
+        background-image: url('../assets/img/mts-background.jpg'); 
+        background-size: cover;
     }
 }
